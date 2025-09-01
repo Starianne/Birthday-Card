@@ -1,0 +1,13 @@
+@font-face {
+    font-family: '8bit';
+    src: url("file:///C:\Users\annel\OneDrive\Codingggg\Websitesss\FirstBirthdayCard\Birthday-Card\silkscreen\slkscr.ttf");
+}
+img {
+    width: 20rem;
+}
+body {
+    text-align: center;
+    font-family: '8bit', sans-serif;
+    background: aliceblue;
+    color:blueviolet;
+}
