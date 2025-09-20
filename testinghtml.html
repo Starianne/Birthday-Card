@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>From Annelies</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <h1>Happy Birthday!!!</h1>
-        <img
-        src="Images/birthday-cake-asset-pixilart.png"
-        alt="A birthday cake for you, drawn in pixel art!"
-        />
-        <p>I hope you enjoy your special day!</p>
-    </body>
+<html lang="en">
+  <head>
+    <title>From Annelies</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      a:link,
+      a:visited {
+        background-color: #4c84e4;
+        color: white;
+        padding: 20x 35px;
+        text-align: center;
+        text-decoration: solid;
+        display: inline-block;
+      }
+
+      a:hover, a:active {
+        background-color: #2E4F8A;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Happy Birthday!!!</h1>
+    <!--Inserts an image and adds a tooltip when you hover over-->
+    <img
+      title="A birthday cake for you!"
+      src="Images/birthday-cake-asset-pixilart.png"
+      alt="A birthday cake for you, drawn in pixel art!"
+    />
+    <p title="I really do!!!!">
+      I hope you enjoy <br />
+      your special day!
+    </p>
+
+    <a href="aboutPage.html" target="_blank"This should let to the about page</a>
+  </body>
 </html>

@@ -1,13 +1,18 @@
 @font-face {
-    font-family: '8bit';
-    src: url("file:///C:\Users\annel\OneDrive\Codingggg\Websitesss\FirstBirthdayCard\Birthday-Card\silkscreen\slkscr.ttf");
+  font-family: "retro";
+  /*MAKE SURE YOUR SLASH IS / NOT \!!!!!*/
+  src: url("/Birthday-Card/Fonts/silkscreen/slkscr.ttf") format("truetype");
 }
 img {
-    width: 20rem;
+  width: 20rem;
+}
+h1 {
+  font-family: "retro";
+  color: red;
 }
 body {
-    text-align: center;
-    font-family: '8bit', sans-serif;
-    background: aliceblue;
-    color:blueviolet;
+  text-align: center;
+  font-family: retro;
+  background: aliceblue;
+  color: blueviolet;
 }
