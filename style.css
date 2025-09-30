@@ -1,7 +1,7 @@
 @font-face {
   font-family: "retro";
   /*MAKE SURE YOUR SLASH IS / NOT \!!!!!*/
-  src: url("/Birthday-Card/Fonts/silkscreen/slkscr.ttf") format("truetype");
+  src: url("/Birthday-Card/Fonts/PixelOperator8-Bold.ttf") format("truetype");
 }
 img {
   width: 20rem;
@@ -12,7 +12,7 @@ h1 {
 }
 body {
   text-align: center;
-  font-family: retro;
+  font-family: "retro";
   background: aliceblue;
   color: blueviolet;
 }
