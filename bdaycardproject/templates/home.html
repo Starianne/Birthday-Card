@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>From Annelies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <style>
       a:link,
       a:visited {
@@ -36,7 +37,7 @@
     </p>
 
     <p>
-      <a href="/"> This should let you go to the about page </a>
+      <a href="/about"> This should let you go to the about page </a>
     </p>
   </body>
 </html>

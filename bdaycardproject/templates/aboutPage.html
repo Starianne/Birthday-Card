@@ -1,13 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
-    <title>About page:</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>About page:</title>
+    <script src="{% static js/main.js %}" defer></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
     <h1>About page!</h1>
-    <p>Go back <a ="href" ="/">Home!</a></p>
+    <p>Go back <a href="/">Home!</a></p>
   </body>
 </html>
