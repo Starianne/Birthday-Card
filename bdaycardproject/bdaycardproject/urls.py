@@ -1,5 +1,5 @@
 """
-URL configuration for birthdaycarddjango project.
+URL configuration for bdaycardproject project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -15,10 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import path
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("members/", include("birthdaycarddjango.members.urls")),
-
+    path('', views.homepage),
+    path('about/', views.about),
 ]
