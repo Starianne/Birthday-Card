@@ -1,43 +1,18 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>From Annelies</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <style>
-      a:link,
-      a:visited {
-        background-color: #4c84e4;
-        color: white;
-        padding: 20px 35px;
-        text-align: center;
-        text-decoration: solid;
-        display: inline-block;
-      }
+{% extends 'layout.html' %} {% block title %} Home {% endblock %} {% block
+content %}
+<h1>Happy Birthday!!!</h1>
+<!--Inserts an image and adds a tooltip when you hover over-->
+<img
+  title="A birthday cake for you!"
+  src="Images/birthday-cake-asset-pixilart.png"
+  alt="A birthday cake for you, drawn in pixel art!"
+/>
+<p title="I really do!!!!">
+  I hope you enjoy <br />
+  your special day!
+</p>
 
-      a:hover,
-      a:active {
-        background-color: #2e4f8a;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Happy Birthday!!!</h1>
-    <!--Inserts an image and adds a tooltip when you hover over-->
-    <img
-      title="A birthday cake for you!"
-      src="Images/birthday-cake-asset-pixilart.png"
-      alt="A birthday cake for you, drawn in pixel art!"
-    />
-    <p title="I really do!!!!">
-      I hope you enjoy <br />
-      your special day!
-    </p>
-
-    <p>
-      <a href="/about"> This should let you go to the about page </a>
-    </p>
-  </body>
-</html>
+<p>
+  <a href="/about"> This should let you go to the about page </a>
+</p>
+{% endblock %}
