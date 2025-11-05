@@ -10,8 +10,15 @@
   </head>
   <body>
     <nav>
-      <a href="/"> home (●'◡'●)</a> | <a href="/about"> about ᓚᘏᗢ</a> |
-      <a href="{% url 'cards:list' %}"> cards (ง •_•)ง</a> |
+      <a href="/">
+        home <span role="img" aria-label="smiley face">(●'◡'●)</span>
+      </a> |
+      <a href="/about">
+        about <span role="img" aria-label="kitty">ᓚᘏᗢ</span>
+      </a> |
+      <a href="{% url 'cards:list' %}">
+        cards <span role="img" aria-label="about to fight face">(ง •_•)ง</span>
+      </a> |
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>

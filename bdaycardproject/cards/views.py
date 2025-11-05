@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from .models import Cards
-from django.http import HttpResponse
 
 # Create your views here.
 def cards_list(request):
@@ -8,4 +7,5 @@ def cards_list(request):
     return render(request, 'cards/cards_list.html', {'cards': cards})
 
 def card_page(request, slug):
-    return HttpResponse(slug)
+    card = Cards.objects.get(slug=slug)
+    return render(request, 'cards/card_page.html', {'card': card})
