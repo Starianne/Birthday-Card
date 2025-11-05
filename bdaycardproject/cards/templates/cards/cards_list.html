@@ -1,7 +1,18 @@
 {% extends 'layout.html' %}
 {% block title %}
-Cards
+    Cards
 {% endblock %}
+
 {% block content %}
-<h1>cards</h1>
+    <section>
+    <h1>cards</h1>
+
+    {% for card in cards %}
+        <article class="card">
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.date }}</p>
+            <p>{{ card.body }}</p>
+        </article>
+    {% endfor %}
+    </section>
 {% endblock %}
