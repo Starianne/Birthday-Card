@@ -9,7 +9,11 @@
 
     {% for card in cards %}
         <article class="card">
-            <h2>{{ card.title }}</h2>
+            <h2>
+                <a href="{% url 'page' slug=post.slug %}">
+                {{ card.title }}
+                </a>
+            </h2>
             <p>{{ card.date }}</p>
             <p>{{ card.body }}</p>
         </article>
