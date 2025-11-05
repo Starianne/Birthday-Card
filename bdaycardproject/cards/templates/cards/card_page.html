@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% block title %}
+    {{ card.title }}
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1> {{ card.title }} </h1>
+        <p>{{ card.date }}</p>
+        <p>{{ card.body }}</p>
+
+    </section>
+{% endblock %}

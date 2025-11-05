@@ -10,7 +10,7 @@
     {% for card in cards %}
         <article class="card">
             <h2>
-                <a href="{% url 'page' slug=post.slug %}">
+                <a href="{% url 'cards:page' slug=card.slug %}">
                 {{ card.title }}
                 </a>
             </h2>
