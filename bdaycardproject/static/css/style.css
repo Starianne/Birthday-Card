@@ -14,5 +14,11 @@ body {
   text-align: center;
   font-family: "retro";
   background: aliceblue;
-  color: blueviolet;
+  color: rgb(84, 34, 130);
+}
+
+.banner{
+  display: block;
+  width: 100%;
+  max-width: 800px;
 }
