@@ -5,6 +5,11 @@
 
 {% block content %}
     <section>
+        <img 
+            class="banner"
+            src="{{ post.banner.url }}"
+            alt="{{ post.tile }}"
+        />
         <h1> {{ card.title }} </h1>
         <p>{{ card.date }}</p>
         <p>{{ card.body }}</p>
