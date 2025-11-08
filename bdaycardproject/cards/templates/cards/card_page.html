@@ -5,12 +5,12 @@
 
 {% block content %}
     <section>
-        <img 
+        <h1> {{ card.title }} </h1>
+         <img 
             class="banner"
             src="{{ card.banner.url }}"
             alt="{{ card.tile }}"
         />
-        <h1> {{ card.title }} </h1>
         <p>{{ card.date }}</p>
         <p>{{ card.body }}</p>
     </section>
