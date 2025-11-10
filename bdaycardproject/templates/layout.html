@@ -19,6 +19,22 @@
       <a href="{% url 'cards:list' %}">
         cards <span role="img" aria-label="about to fight face">(ง •_•)ง</span>
       </a> |
+      {% if user.is_authenticated%}
+        <a href="{% url 'cards:new-card' %}">
+          new card <span role="img" aria-label="cat face">/ᐠ｡ꞈ｡ᐟ\</span>
+        </a> |
+        <form class="logout" action="{% url 'userLogin:logout' %}" method="post">
+          {% csrf_token %}
+          <button class="logout-button" aria-label="logout">logout (*￣3￣)╭</button>
+        </form>
+      {% else %}
+        <a href="{% url 'userLogin:register' %}">
+          register <span role="img" aria-label="writing face">✍️(◔◡◔)</span>
+        </a> |
+        <a href="{% url 'userLogin:login' %}">
+          log in <span role="img" aria-label="greeting face">(｡･∀･)ﾉﾞ</span>
+        </a> 
+      {% endif %}
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>
